@@ -1,9 +1,9 @@
 
 
-function List(props){
+function List({items= [], category= "Category"}) {
 
-    const itemList = props.items;
-    const category = props.category;
+    const itemList = items;
+    const categories = category;
     
     //fruits.sort((a,b) => a.name.localeCompare(b.name)); //Alphabetical sort
     //fruits.sort((a,b) => a.calories - b.calories); //Sort by calories
@@ -37,7 +37,7 @@ function List(props){
 
     return(
         <>
-            <h3 className="list-category">{category}</h3>
+            <h3 className="list-category">{categories}</h3>
             <ol className="list-item">{listItems}</ol>
         </>
     );
