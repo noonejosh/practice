@@ -1,4 +1,4 @@
-import profile from '/public/Hanz.jpg';
+import profile from './assets/Hanz.jpg';
 
 function Card(){
 
