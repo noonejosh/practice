@@ -11,7 +11,7 @@ function List({items= [], category= "Category"}) {
     //fruits.sort((a,b) => b.calories - a.calories); //Reverse sort by calories
     //display all fruits
     const listItems = itemList.map(item => {
-        if(typeof item.id !== 'number') {
+        if(typeof item.id !== 'number' || typeof item.calories !== 'number' || typeof item.name !== 'string') {
             console.error("Invalid item data:", item);
             return null; // Skip invalid items
         }
