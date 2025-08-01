@@ -98,3 +98,21 @@
   color: white;
   cursor: pointer;
 }
+
+.counter {
+  text-align: center;
+  margin: 20%;
+}
+
+.title {
+  font-size: 8em;
+  color: hsl(0, 0%, 20%);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
