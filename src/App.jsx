@@ -1,10 +1,10 @@
-import Counter from "./Counter";
+import Objects from "./Objects";
 
 function App() {
 
     return(
         <>
-            <Counter />
+            <Objects />
         </>
     );
 }
