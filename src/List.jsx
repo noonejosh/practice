@@ -10,10 +10,18 @@ function List({items= [], category= "Category"}) {
     //fruits.sort((a,b) => b.name.localeCompare(a.name)); //Reverse alphabetical sort
     //fruits.sort((a,b) => b.calories - a.calories); //Reverse sort by calories
     //display all fruits
-    const listItems = itemList.map(item =>
-        <li key={item.id}>
-            {item.name}: &nbsp;
-            <b>{item.calories}</b></li>
+    const listItems = itemList.map(item => {
+        if(typeof item.id !== 'number') {
+            console.error("Invalid item data:", item);
+            return null; // Skip invalid items
+        }
+        return (
+            <li key={item.id}>
+                {item.name}: &nbsp;
+                <b>{item.calories}</b>
+            </li>
+        );
+        }
     );
 
     //filter low calorie fruits
