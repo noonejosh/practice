@@ -6,7 +6,8 @@ function Counter(){
 
     const decrement = () => {
         if(count > 0){
-            setCount( count -1);
+            setCount( c => c -1);
+            setCount( c => c -1);
         }
     }
 
@@ -15,7 +16,9 @@ function Counter(){
     }
 
     const increment = () => {
-        setCount( count + 1);
+        setCount( prevCount  => prevCount + 1);
+        setCount( prevCount  => prevCount + 1);
+        setCount( prevCount  => prevCount + 1);
     }
 
     return(
