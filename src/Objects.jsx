@@ -6,6 +6,7 @@ function Objects(){
     });
 
     function handleYearChange(e){
+        //using spread operator to update the year
         setCar(c => ({...c, year: e.target.value}));
     }
     function handleMakeChange(e){
