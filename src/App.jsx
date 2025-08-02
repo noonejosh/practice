@@ -1,10 +1,11 @@
-import ArrayOfObjects from "./ArrayOfObjects";
+
+import TodoList from "./TodoList";
 
 function App() {
 
     return(
         <>
-            <ArrayOfObjects />
+            <TodoList />
         </>
     );
 }

@@ -1,4 +1,6 @@
-
+body{
+  background-color: #050505;
+}
 .card{
   border: 1px solid rgb(71, 71, 71);
   border-radius: 10px;
@@ -151,3 +153,86 @@ input[type="color"]{
   cursor: pointer;
   margin-top: 10px;
 }
+
+/*to-do list*/
+.ToDo-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.ToDo-container .title {
+  font-size: 4em;
+  color: white;
+}
+
+.ToDo-container .inp{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.inp input[type="text"]{
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #e0eafc 0%, #17d6bd 100%);
+  font-size: 1em;
+  padding: 5px;
+}
+
+.inp .addbtn{
+  width: 100px;
+  height: 40px;
+  font-size: 1em;
+  padding: 5px;
+  background-color: #17d6bd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inp .addbtn:hover{
+  background-color: #138f7e;
+}
+
+.tasks{
+  display: flex;
+  text-align: center;
+  margin: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  gap: 5px;
+}
+
+.task{
+  width: 90%;
+  text-align: center;
+  margin: 10px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.tasks .btn {
+  margin: 5px;
+  background-color: #17d6bd;
+}
+
+.tasks .btn:hover {
+  background-color: #138f7e;
+}
+
+#del{
+  background-color: red;
+}
+
+#del:hover{
+  background-color: rgb(184, 0, 0);
+}
+
