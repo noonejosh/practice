@@ -1,10 +1,10 @@
-import Arrays from "./Arrays";
+import ArrayOfObjects from "./ArrayOfObjects";
 
 function App() {
 
     return(
         <>
-            <Arrays />
+            <ArrayOfObjects />
         </>
     );
 }
